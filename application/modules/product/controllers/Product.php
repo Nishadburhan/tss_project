@@ -1,5 +1,5 @@
 <?php 
-define('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') OR exit('No direct script access allowed');
 class Product extends TSS_Controller {
 	public function __construct() {
 		parent::__construct();
@@ -24,7 +24,7 @@ class Product extends TSS_Controller {
 
 	}
 
-	public function list() {
+	public function lists() {
 
 	}
 

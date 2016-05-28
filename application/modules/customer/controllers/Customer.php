@@ -23,22 +23,21 @@ class Customer extends TSS_Controller {
 		$i=json_decode(file_get_contents("php://input"));
 		if($i->id=='-1') {
 			$data=array(
-
-			'customer_type'=>$i->type,
-			'customer_code'=>$i->code,
-			'customer_full_name'=>$i->fname,
-			'customer_phone'=>$i->phone,
-			'customer_mobile'=>$i->mobile,
-			'customer_fax'=>$i->fax,
-			'customer_primary_mail'=>$i->pmail,
-			'customer_secondary_mail'=>$i->smail,
-			'customer_person'=>$i->cperson,
-			'customer_website'=>$i->website,
-			'customer_country'=>$i->country,
-			'customer_province'=>$i->province,
-			'customer_city'=>$i->city,
-			'customer_location'=>$i->location,
-			'customer_address'=>$i->address
+				'customer_type'=>$i->type,
+				'customer_code'=>$i->code,
+				'customer_full_name'=>$i->fname,
+				'customer_phone'=>$i->phone,
+				'customer_mobile'=>$i->mobile,
+				'customer_fax'=>$i->fax,
+				'customer_primary_mail'=>$i->pmail,
+				'customer_secondary_mail'=>$i->smail,
+				'customer_person'=>$i->cperson,
+				'customer_website'=>$i->website,
+				'customer_country'=>$i->country,
+				'customer_province'=>$i->province,
+				'customer_city'=>$i->city,
+				'customer_location'=>$i->location,
+				'customer_address'=>$i->address
 			);
 			$this->base_model->add('customers',$data);
 

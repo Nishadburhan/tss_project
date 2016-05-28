@@ -72,9 +72,9 @@ app.controller('customerCtrl', function($http, $scope, $log) {
 		$http.get('customer/manipulate_code').success(function(response) {
 			$scope.ccode='';
 			if(response.code<1) {
-				$scope.ccode=parseInt(response.code+1000);
+				$scope.ccode=parseInt(response.code)+1000;
 			}else {
-				$scope.ccode=parseInt(response.code+1);
+				$scope.ccode=parseInt(response.code)+1;
 			}
 
 			// $log.info($scope.ccode);

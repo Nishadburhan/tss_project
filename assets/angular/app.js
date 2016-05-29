@@ -207,7 +207,7 @@ app.controller('categoriesCtrl', function($http, $scope, $log) {
 		$http.post('categories/edit', {
 			'id':id
 		}).success(function(data) {
-			$log.info(data);
+		
 			$scope.id=data.id;
 			$scope.name=data.name;
 			$scope.status=data.status;
@@ -236,7 +236,7 @@ app.controller('categoriesCtrl', function($http, $scope, $log) {
 			$http.post('categories/delete', {
 				'id':id
 			}).success(function(data) {
-				$scope.lists();
+				$scope.list();
 				toastr.error('Successfully Deleted!');
 			});	
 		}

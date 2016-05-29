@@ -31,8 +31,8 @@
                         <span class="input-group-addon">Status</span>
                         <select class="form-control" required ng-model="status">
                           <option value="">None</option>
-                          <option value="1">Active</option>
-                          <option value="2">Inactive</option>
+                          <option value="Active">Active</option>
+                          <option value="Inactive">Inactive</option>
                         </select>
                       </div>
                     </div>

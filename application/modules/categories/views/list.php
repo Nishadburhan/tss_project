@@ -19,7 +19,7 @@
               <!-- TABLE: LATEST ORDERS -->
               <div class="box box-info">
                 <div class="box-header with-border">
-                  <h3 class="box-title"><input type="text" name="" class="form-control" ng-model="search" placeholder="Search:-"></h3>
+                  <h3 class="box-title"><input type="text" name="" ui-autocomplete="autocompleteOptions" class="form-control" ng-model="search" placeholder="Search:-"></h3>
                   <div class="box-tools pull-right clearfix">
                     <!-- <button class="btn btn-info" ><i class="fa fa-plus"></i></button><br/> -->
                     <a href="#" data-toggle="modal" data-target="#myModal" ng-click="formReset()" class="btn btn-sm btn-info btn-flat">Add New Category</a>

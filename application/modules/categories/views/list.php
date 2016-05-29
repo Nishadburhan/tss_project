@@ -1,4 +1,4 @@
-<controller ng-controller="productCtrl">
+<controller ng-controller="categoriesCtrl">
   <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
@@ -22,7 +22,7 @@
                   <h3 class="box-title"><input type="text" name="" class="form-control" ng-model="search" placeholder="Search:-"></h3>
                   <div class="box-tools pull-right clearfix">
                     <!-- <button class="btn btn-info" ><i class="fa fa-plus"></i></button><br/> -->
-                    <a href="#" data-toggle="modal" data-target="#myModal" ng-click="formReset()" class="btn btn-sm btn-info btn-flat">Add New Product</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal" ng-click="formReset()" class="btn btn-sm btn-info btn-flat">Add New Category</a>
                     <!-- <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button> -->
                   </div>
                 </div><!-- /.box-header -->
@@ -32,23 +32,19 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Customer</th>
-                          <th>Code</th>
-                          <th>Mobile</th>
-                          <th>Email</th>
+                          <th>Category</th>
+                          <th>Status</th>
                           <th><i class="fa fa-level-down" aria-hidden="true"></i></th>
                         </tr>
                       </thead>
-                      <tbody ng-init="show_all()">
-                        <tr ng-repeat="c in customers | filter:search">
+                      <tbody ng-init="lists()">
+                        <tr ng-repeat="c in data | filter:search">
                           <td>{{$index + 1}}</td>
-                          <td>{{c.fname}}</td>
-                          <td>{{c.code}}</td>
-                          <td>{{c.mobile}}</td>
-                          <td>{{c.pmail}}</td>
+                          <td>{{c.name}}</td>
+                          <td>{{c.status}}</td>
                           <td>
-                            <a href="#" class="btn btn-warning" ng-click="edit_row(c.id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> &nbsp;
-                            <a href="#" class="btn btn-danger" ng-click="delete_row(c.id)" ><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                            <a href="#" class="btn btn-warning" ng-click="edit(c.id)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a> &nbsp;
+                            <a href="#" class="btn btn-danger" ng-click="delete(c.id)" ><i class="fa fa-trash-o" aria-hidden="true"></i></a>
                           </td>
                         </tr>
                       </tbody>

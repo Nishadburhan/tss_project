@@ -120,7 +120,7 @@ app.controller('customerCtrl', function($http, $scope, $log) {
 });
 /*Module-Customer:end*/
 
-/*Module-Product:start*/
+/*Module-Category:start*/
 app.controller('categoriesCtrl', function($http, $scope, $log) {
 	$scope.id='-1',
 	$scope.add=function() {
@@ -242,4 +242,11 @@ app.controller('categoriesCtrl', function($http, $scope, $log) {
 		}
 
 	}
+});
+
+/*Module-Category:end*/
+
+/*Module-Category:start*/
+app.controller('productCtrl', function($http, $scope, $log) {
+	
 });

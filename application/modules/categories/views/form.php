@@ -7,7 +7,7 @@
             <div class="modal-header">
               <div class="row">
                 <div class="col-md-8">
-                  <h4 class="modal-title">Create a Customer</h4>
+                  <h4 class="modal-title">Create Category</h4>
                 </div>
                 
               </div>

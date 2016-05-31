@@ -13,7 +13,7 @@ grunt.loadNpmTasks('grunt-contrib-cssmin');
 	  cssmin: {
 		  target: {
 		    files: {
-		      'dist/app.min.css': ['assets/bootstrap/css/bootstrap..css']
+		      'dist/app.min.css': ['assets/bootstrap/css/bootstrap.css']
 		    }
 		  }
 		}

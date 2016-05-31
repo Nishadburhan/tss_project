@@ -15,6 +15,21 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`tsserp` /*!40100 DEFAULT CHARACTER SET 
 
 USE `tsserp`;
 
+/*Table structure for table `tbl_categories` */
+
+DROP TABLE IF EXISTS `tbl_categories`;
+
+CREATE TABLE `tbl_categories` (
+  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+  `category_name` varchar(100) DEFAULT NULL,
+  `category_status` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`category_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tbl_categories` */
+
+insert  into `tbl_categories`(`category_id`,`category_name`,`category_status`) values (4,'sun','Active'),(3,'Web','Inactive');
+
 /*Table structure for table `tbl_customers` */
 
 DROP TABLE IF EXISTS `tbl_customers`;
@@ -40,8 +55,6 @@ CREATE TABLE `tbl_customers` (
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 /*Data for the table `tbl_customers` */
-
-insert  into `tbl_customers`(`customer_id`,`customer_code`,`customer_type`,`customer_full_name`,`customer_phone`,`customer_mobile`,`customer_fax`,`customer_primary_mail`,`customer_secondary_mail`,`customer_person`,`customer_website`,`customer_country`,`customer_province`,`customer_city`,`customer_location`,`customer_address`) values (7,1000,'organization','Nishad Burhan','9072133288','9072133288',NULL,'nishadburhanofficial@gmail.com','nishadburhanofficial@gmail.com','Nishad','tss.com','India','Kerala','Perinthalmanna','Thazhekode','S/o Burhanudheen Kn, Kizhakkanadu (House), Thazhekode (West) PO, Perinthalmanna, Malappuram');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
